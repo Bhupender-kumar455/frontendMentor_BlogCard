@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Blog preview card</title>
+    <style>
+      @font-face {
+        font-family: "herohonda";
+        src: url("./assets/fonts/Figtree-Italic-VariableFont_wght.ttf")
+          format("truetype");
+      }
+      @font-face {
+        font-family: textbase;
+        src: url("./assets/fonts/Figtree-VariableFont_wght.ttf")
+          format("truetype");
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "herohonda", sans-serif;
+        font-family: "textbase", sans-serif;
+      }
+      .body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f5d04e;
+      }
+      .parent {
+        display: grid;
+        max-width: 300px;
+        border: 1px solid black;
+        box-shadow: 7px 5px 2px black;
+        padding: 15px;
+        row-gap: 1px;
+        border-radius: 15px;
+        background-color: white;
+      }
+      .image {
+        width: 100%;
+        border-radius: 15px;
+        margin-bottom: 10px;
+      }
+      .first {
+        background-color: #f5d04e;
+        display: inline;
+        font-size: 11.5px;
+        font-weight: bold;
+        padding: 4px;
+        border-radius: 5px;
+      }
+      .paragraph .long {
+        color: #a9a9a9;
+        font-size: 14px;
+        font-family: "textbase";
+      }
+      .paragraph .date {
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .paragraph h5 {
+        font-size: 20px;
+        margin: 0;
+      }
+      .last-row {
+        display: flex;
+        align-items: center;
+      }
+      .last-row img {
+        width: 40px;
+      }
+      .last-row p {
+        margin-left: 10px;
+        font-weight: bold;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body">
+      <main class="parent">
+        <img
+          class="image"
+          src="./assets/images/illustration-article.svg"
+          alt=""
+        />
+        <div class="paragraph">
+          <p class="first">Learning</p>
+          <p class="date">Published 21 Dec 2023</p>
+          <h5>HTML & CSS foundations</h5>
+          <p class="long">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cumque
+            magni nesciunt illo, ea molestiae. Nulla quae officia cum. Quod
+          </p>
+        </div>
+        <div class="last-row">
+          <img src="./assets/images/image-avatar.webp" alt="" />
+          <p>Grag Heaoper</p>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
